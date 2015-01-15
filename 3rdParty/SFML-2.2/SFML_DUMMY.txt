@@ -1,0 +1,1 @@
+Place the 'lib' and 'include' folder of your SFML build in this directory.
