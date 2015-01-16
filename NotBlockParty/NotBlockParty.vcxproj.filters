@@ -77,9 +77,6 @@
     <ClInclude Include="World\GraphicsObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="World\Tile.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Engine\Rendering\GraphicsManager.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -87,6 +84,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Messaging\MessageReceiver.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World\ObjectMessages.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Objects.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
