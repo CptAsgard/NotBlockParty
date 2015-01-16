@@ -1,10 +1,7 @@
 #include <SFML\Graphics.hpp>
 
-#include "Game\State\StateManager.hpp"
-#include "Game\State\PlayState.hpp"
-
-#include <Thor\Resources.hpp>
-#include <Thor\Particles.hpp>
+#include "Engine\State\StateManager.hpp"
+#include "Engine\State\PlayState.hpp"
 
 int32_t main( int32_t argc, char **argv ) {
 	StateManager game;

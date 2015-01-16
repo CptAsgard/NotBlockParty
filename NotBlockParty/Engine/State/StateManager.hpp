@@ -8,11 +8,11 @@
 
 #include <cstdint>
 
-#include "..\Core\MessageBus.hpp"
+#include "..\Messaging\MessageBus.hpp"
 
 class GameState;
 
-struct FrameMessage {
+struct FrameMessage {   // TODO: Move to StateMessages.hpp
 	float deltaTime;
 };
 

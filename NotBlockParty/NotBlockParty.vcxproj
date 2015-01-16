@@ -72,22 +72,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Game\Core\MessageBus.cpp" />
-    <ClCompile Include="Game\State\MenuState.cpp" />
-    <ClCompile Include="Game\State\PlayState.cpp" />
-    <ClCompile Include="Game\State\StateManager.cpp" />
+    <ClCompile Include="Engine\Rendering\GraphicsManager.cpp" />
+    <ClCompile Include="Entity\Entity.cpp" />
+    <ClCompile Include="Entity\EntityManager.cpp" />
+    <ClCompile Include="Engine\Messaging\MessageBus.cpp" />
+    <ClCompile Include="Engine\State\MenuState.cpp" />
+    <ClCompile Include="Engine\State\PlayState.cpp" />
+    <ClCompile Include="Engine\State\StateManager.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="World\BaseObject.cpp" />
+    <ClCompile Include="World\GraphicsObject.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game\Core\MessageBus.hpp" />
-    <ClInclude Include="Game\Core\MessageReceiver.hpp" />
-    <ClInclude Include="Game\State\GameState.hpp" />
-    <ClInclude Include="Game\State\MenuState.hpp" />
-    <ClInclude Include="Game\State\PlayState.hpp" />
-    <ClInclude Include="Game\State\StateManager.hpp" />
+    <ClInclude Include="Engine\Rendering\GraphicsManager.hpp" />
+    <ClInclude Include="Entity\Entity.hpp" />
+    <ClInclude Include="Entity\EntityManager.hpp" />
+    <ClInclude Include="Entity\EntityMessages.hpp" />
+    <ClInclude Include="Util.hpp" />
+    <ClInclude Include="Engine\Messaging\MessageBus.hpp" />
+    <ClInclude Include="Engine\Messaging\MessageReceiver.hpp" />
+    <ClInclude Include="Engine\State\GameState.hpp" />
+    <ClInclude Include="Engine\State\MenuState.hpp" />
+    <ClInclude Include="Engine\State\PlayState.hpp" />
+    <ClInclude Include="Engine\State\StateManager.hpp" />
+    <ClInclude Include="World\BaseObject.hpp" />
+    <ClInclude Include="World\GraphicsObject.h" />
+    <ClInclude Include="World\Tile.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Game\Core\MessageBus.inl" />
+    <None Include="Engine\Messaging\MessageBus.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
