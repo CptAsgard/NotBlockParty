@@ -16,8 +16,6 @@ class PlayState : public GameState {
 	void Update( StateManager *game, float deltaTime );
 	void Draw( StateManager *game );
 
-	void HandleMessage( const FrameMessage& mess );
-
 	static PlayState* Instance() {
 		return &_playState;
 	}

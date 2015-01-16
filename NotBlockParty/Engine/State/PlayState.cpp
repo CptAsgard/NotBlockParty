@@ -33,7 +33,3 @@ void PlayState::Update( StateManager* game, float deltaTime ) {
 void PlayState::Draw( StateManager* game ) {
 
 }
-
-void PlayState::HandleMessage( const FrameMessage& mess ) {
-	Update( nullptr, mess.deltaTime );
-}

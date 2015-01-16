@@ -49,8 +49,8 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\3rdParty\SFML-2.2\lib;..\3rdParty\Thor\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>thor-s-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;glew.lib;freetype.lib;jpeg.lib;opengl32.lib;gdi32.lib;winmm.lib;sndfile.lib;openal32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\3rdParty\SFML-2.2\lib;..\3rdParty\Thor\lib;..\3rdParty\SFML-2.2\extlibs\libs-msvc\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>thor-s-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;glew.lib;sndfile.lib;openal32.lib;jpeg.lib;freetype.lib;winmm.lib;ws2_32.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -82,9 +82,11 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="World\BaseObject.cpp" />
     <ClCompile Include="World\GraphicsObject.cpp" />
+    <ClCompile Include="World\PhysicsObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Rendering\GraphicsManager.hpp" />
+    <ClInclude Include="Engine\State\StateMessages.hpp" />
     <ClInclude Include="Entity\Entity.hpp" />
     <ClInclude Include="Entity\EntityManager.hpp" />
     <ClInclude Include="Entity\EntityMessages.hpp" />
@@ -97,8 +99,10 @@
     <ClInclude Include="Engine\State\StateManager.hpp" />
     <ClInclude Include="World\BaseObject.hpp" />
     <ClInclude Include="World\GraphicsObject.h" />
+    <ClInclude Include="World\GraphicsObject.hpp" />
     <ClInclude Include="World\ObjectMessages.hpp" />
     <ClInclude Include="World\Objects.hpp" />
+    <ClInclude Include="World\PhysicsObject.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Messaging\MessageBus.inl" />

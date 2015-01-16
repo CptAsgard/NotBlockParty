@@ -45,6 +45,9 @@
     <ClCompile Include="Engine\Messaging\MessageBus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="World\PhysicsObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entity\EntityMessages.hpp">
@@ -90,6 +93,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="World\Objects.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World\GraphicsObject.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World\PhysicsObject.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\State\StateMessages.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
