@@ -5,7 +5,7 @@
 
 #include "EntityManager.hpp"
 
-class Entity {
+class Entity : sf::Transformable {
 	public:
 	EntityID GetID() const;
 	void Entity::SetID( EntityID id );

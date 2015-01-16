@@ -97,8 +97,7 @@
     <ClInclude Include="Engine\State\StateManager.hpp" />
     <ClInclude Include="World\BaseObject.hpp" />
     <ClInclude Include="World\GraphicsObject.h" />
-    <ClInclude Include="World\ObjectMessages.hpp" />
-    <ClInclude Include="World\Objects.hpp" />
+    <ClInclude Include="World\Tile.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Messaging\MessageBus.inl" />
