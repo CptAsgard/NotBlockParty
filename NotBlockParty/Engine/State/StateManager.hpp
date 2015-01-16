@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include <vector>
-
+#include <memory>
 #include <cstdint>
 
 #include "..\Messaging\MessageBus.hpp"
@@ -14,6 +14,7 @@ class GameState;
 
 struct FrameMessage {   // TODO: Move to StateMessages.hpp
 	float deltaTime;
+	std::weak_ptr<StateManager> manager;
 };
 
 class StateManager {

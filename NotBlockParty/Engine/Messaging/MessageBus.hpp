@@ -9,7 +9,7 @@
 #include "MessageReceiver.hpp"
 
 /**
- * Thanks to zagabar for the amazing MessageBus implementation
+ * Thanks to zagabar for the amazing MessageBus and MessageReceiver implementation
  */
 
 class MessageBus {
