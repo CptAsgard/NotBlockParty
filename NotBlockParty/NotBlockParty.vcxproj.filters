@@ -104,6 +104,9 @@
     <ClInclude Include="Engine\State\StateMessages.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="World\TileFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Messaging\MessageBus.inl">

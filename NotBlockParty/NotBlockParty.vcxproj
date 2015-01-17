@@ -103,6 +103,7 @@
     <ClInclude Include="World\ObjectMessages.hpp" />
     <ClInclude Include="World\Objects.hpp" />
     <ClInclude Include="World\PhysicsObject.hpp" />
+    <ClInclude Include="World\TileFactory.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Messaging\MessageBus.inl" />

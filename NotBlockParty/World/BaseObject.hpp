@@ -11,7 +11,7 @@
  */
 class BaseObject {
 	public:
-	BaseObject( const sf::Vector2f& pos, float rot ); // set pos and rot
+	BaseObject( const sf::Vector2f& pos, float rot = 0 ); // set pos and rot
 
 	sf::Vector2f GetPosition() const { return transform.getPosition(); }
 	float GetRotation() const { return transform.getRotation();	}
