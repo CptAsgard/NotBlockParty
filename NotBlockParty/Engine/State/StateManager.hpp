@@ -8,8 +8,8 @@
 #include <memory>
 #include <cstdint>
 
-#include "StateMessages.hpp"
 #include "..\Messaging\MessageBus.hpp"
+#include "StateMessages.hpp"
 
 class GameState;
 
@@ -30,16 +30,16 @@ class StateManager {
 	bool Running() { return gameIsRunning; }
 	void Quit() { gameIsRunning = false; }
 
-	MessageBus Bus;
-
 	private:
 	std::vector<GameState*> states;
+
+	std::unique_ptr<MessageBus> messageBus;
 
 	bool gameIsRunning;
 
 	sf::Window window;
-
 	sf::Clock deltaClock;
+
 };
 
 #endif // STATEMANAGER_H

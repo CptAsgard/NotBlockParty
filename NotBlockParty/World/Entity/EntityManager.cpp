@@ -8,7 +8,7 @@ EntityManager::EntityManager() : nextID(0) {
 /**
  * NOTE: This function claims ownership of the entity ptr
  */
-WeakEntityPtr EntityManager::AddEntity( std::unique_ptr<Entity> entity ) {
+WeakEntityPtr EntityManager::CreateEntity( std::unique_ptr<Entity> entity ) {
 	EntityPtr added{ std::move( entity ) }; // Claim ptr ownership of entity
 	EntityID addedID = GetNextID();
 

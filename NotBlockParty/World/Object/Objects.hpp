@@ -1,8 +1,6 @@
 #ifndef OBJECTS_H
 #define OBJECTS_H
 
-#include "..\Engine\Messaging\MessageBus.hpp"
-
 #include "BaseObject.hpp"
 #include "GraphicsObject.hpp"
 #include "PhysicsObject.hpp"
@@ -13,7 +11,7 @@
 
 class Tile : public BaseObject, public GraphicsObject, public PhysicsObject { 
 	public:
-	using BaseObject::BaseObject;
+	Tile(const sf::Vector2f& gridPos) : BaseObject(gridPos) { }
 
 	const sf::Vector2f* GetGridPosition() const {
 		return &gridPos;
@@ -25,7 +23,11 @@ class Tile : public BaseObject, public GraphicsObject, public PhysicsObject {
 };
 
 class BlockTile : Tile {
-	
+
+	private:
+	static DerivedRegister<BlockTile> reg;
 };
+DerivedRegister<BlockTile> BlockTile::reg( "Block" );
+
 
 #endif // OBJECTS_H

@@ -3,6 +3,8 @@
 
 #include "GameState.hpp"
 
+#include "..\..\World\Entity\EntityManager.hpp"
+
 class PlayState : public GameState {
 
 	public:

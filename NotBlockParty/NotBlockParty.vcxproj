@@ -73,23 +73,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Engine\Rendering\GraphicsManager.cpp" />
-    <ClCompile Include="Entity\Entity.cpp" />
-    <ClCompile Include="Entity\EntityManager.cpp" />
+    <ClCompile Include="World\Entity\Entity.cpp" />
+    <ClCompile Include="World\Entity\EntityManager.cpp" />
     <ClCompile Include="Engine\Messaging\MessageBus.cpp" />
     <ClCompile Include="Engine\State\MenuState.cpp" />
     <ClCompile Include="Engine\State\PlayState.cpp" />
     <ClCompile Include="Engine\State\StateManager.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="World\BaseObject.cpp" />
-    <ClCompile Include="World\GraphicsObject.cpp" />
-    <ClCompile Include="World\PhysicsObject.cpp" />
+    <ClCompile Include="World\Object\BaseObject.cpp" />
+    <ClCompile Include="World\Object\GraphicsObject.cpp" />
+    <ClCompile Include="World\Object\PhysicsObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Rendering\GraphicsManager.hpp" />
     <ClInclude Include="Engine\State\StateMessages.hpp" />
-    <ClInclude Include="Entity\Entity.hpp" />
-    <ClInclude Include="Entity\EntityManager.hpp" />
-    <ClInclude Include="Entity\EntityMessages.hpp" />
+    <ClInclude Include="World\Entity\Entity.hpp" />
+    <ClInclude Include="World\Entity\EntityManager.hpp" />
+    <ClInclude Include="World\Entity\EntityMessages.hpp" />
     <ClInclude Include="Util.hpp" />
     <ClInclude Include="Engine\Messaging\MessageBus.hpp" />
     <ClInclude Include="Engine\Messaging\MessageReceiver.hpp" />
@@ -97,12 +97,15 @@
     <ClInclude Include="Engine\State\MenuState.hpp" />
     <ClInclude Include="Engine\State\PlayState.hpp" />
     <ClInclude Include="Engine\State\StateManager.hpp" />
-    <ClInclude Include="World\BaseObject.hpp" />
+    <ClInclude Include="World\Maps\BaseTileMap.hpp" />
+    <ClInclude Include="World\Maps\TileRenderer.hpp" />
+    <ClInclude Include="World\Object\BaseObject.hpp" />
+    <ClInclude Include="World\Maps\DEBUG_Level1TileMap.hpp" />
     <ClInclude Include="World\GraphicsObject.h" />
-    <ClInclude Include="World\GraphicsObject.hpp" />
-    <ClInclude Include="World\ObjectMessages.hpp" />
-    <ClInclude Include="World\Objects.hpp" />
-    <ClInclude Include="World\PhysicsObject.hpp" />
+    <ClInclude Include="World\Object\GraphicsObject.hpp" />
+    <ClInclude Include="World\Object\ObjectMessages.hpp" />
+    <ClInclude Include="World\Object\Objects.hpp" />
+    <ClInclude Include="World\Object\PhysicsObject.hpp" />
     <ClInclude Include="World\TileFactory.hpp" />
   </ItemGroup>
   <ItemGroup>

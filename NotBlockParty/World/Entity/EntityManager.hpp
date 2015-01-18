@@ -5,8 +5,6 @@
 #include <unordered_map>
 #include <stack>
 
-#include "..\Engine\Messaging\MessageBus.hpp"
-
 class Entity;
 using EntityID = uint32_t;
 #include "Entity.hpp"
@@ -18,7 +16,7 @@ class EntityManager {
 	public:
 	EntityManager();
 
-	WeakEntityPtr AddEntity( std::unique_ptr<Entity> entity );
+	WeakEntityPtr CreateEntity( std::unique_ptr<Entity> entity );
 
 	WeakEntityPtr FindEntity( EntityID id ) const;
 

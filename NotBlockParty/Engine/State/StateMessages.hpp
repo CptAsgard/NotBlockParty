@@ -7,7 +7,7 @@
 
 class StateManager;
 
-struct FrameMessage {   // TODO: Move to StateMessages.hpp
+struct FrameMessage {
 	float deltaTime;
 	std::weak_ptr<StateManager> manager;
 };

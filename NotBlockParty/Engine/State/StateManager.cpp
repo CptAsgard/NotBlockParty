@@ -5,13 +5,12 @@
  * Init creates the window, and starts the game.
  */
 void StateManager::Init( const sf::String& title, int32_t width, int32_t height ) {
-
 	// Create the window
 	window.create( sf::VideoMode( width, height ), title );
-
 	window.setVerticalSyncEnabled( true );
 
-	// Sets the application to running.
+	messageBus = std::make_unique<MessageBus>();
+
 	gameIsRunning = true;
 }
 
@@ -94,7 +93,7 @@ void StateManager::HandleEvents() {
  * Will let the current state update.
  */
 void StateManager::Update() {
-	Bus.Send( FrameMessage{ deltaClock.restart().asSeconds() } );
+	messageBus->Send( FrameMessage{ deltaClock.restart().asSeconds() } );
 }
 
 /**
