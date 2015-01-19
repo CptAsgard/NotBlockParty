@@ -4,6 +4,8 @@
 #include "GameState.hpp"
 
 #include "..\..\World\Entity\EntityManager.hpp"
+#include "..\..\World\Maps\TileMapRenderer.hpp"
+#include "..\..\World\Maps\DEBUG_Level1TileMap.hpp"
 
 class PlayState : public GameState {
 
@@ -27,6 +29,9 @@ class PlayState : public GameState {
 
 	private:
 	static PlayState _playState;
+
+	std::unique_ptr<TileMapRenderer> tileMapRenderer;
+	std::unique_ptr<BaseTileMap> currentMap;
 
 };
 #endif // PLAYSTATE_H

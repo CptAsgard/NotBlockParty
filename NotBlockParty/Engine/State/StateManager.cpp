@@ -1,6 +1,10 @@
 #include "GameState.hpp"
 #include "StateManager.hpp"
 
+StateManager::StateManager() : messageBus( std::make_unique<MessageBus>() ) {
+
+}
+
 /**
  * Init creates the window, and starts the game.
  */
@@ -9,7 +13,7 @@ void StateManager::Init( const sf::String& title, int32_t width, int32_t height 
 	window.create( sf::VideoMode( width, height ), title );
 	window.setVerticalSyncEnabled( true );
 
-	messageBus = std::make_unique<MessageBus>();
+	graphicsMan = std::make_unique<GraphicsManager>();
 
 	gameIsRunning = true;
 }

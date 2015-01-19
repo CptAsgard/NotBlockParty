@@ -12,4 +12,8 @@ struct FrameMessage {
 	std::weak_ptr<StateManager> manager;
 };
 
+struct DrawMessage {
+	sf::RenderWindow* window;
+};
+
 #endif STATEMESSAGES_H

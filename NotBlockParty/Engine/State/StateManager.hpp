@@ -2,6 +2,7 @@
 #define STATEMANAGER_H 
 
 #include <SFML\Window.hpp>
+#include <SFML\Graphics.hpp>
 
 #include <iostream>
 #include <vector>
@@ -10,12 +11,16 @@
 
 #include "..\Messaging\MessageBus.hpp"
 #include "StateMessages.hpp"
+#include "..\Rendering\GraphicsManager.hpp"
 
 class GameState;
+class GraphicsManager;
 
 class StateManager {
 
 	public:
+	StateManager();
+
 	void Init( const sf::String& title, int32_t width, int32_t height );
 	void CleanUp();
 
@@ -30,14 +35,18 @@ class StateManager {
 	bool Running() { return gameIsRunning; }
 	void Quit() { gameIsRunning = false; }
 
+	MessageBus* GetMessageBus() { return messageBus.get(); }
+
+	sf::RenderWindow window;
+
 	private:
 	std::vector<GameState*> states;
 
 	std::unique_ptr<MessageBus> messageBus;
+	std::unique_ptr<GraphicsManager> graphicsMan;
 
 	bool gameIsRunning;
 
-	sf::Window window;
 	sf::Clock deltaClock;
 
 };

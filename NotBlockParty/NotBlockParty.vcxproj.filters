@@ -48,6 +48,12 @@
     <ClCompile Include="World\Object\PhysicsObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="World\Maps\TileMapRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Maps\BaseTileMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Util.hpp">
@@ -113,7 +119,13 @@
     <ClInclude Include="World\TileFactory.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="World\Maps\TileRenderer.hpp">
+    <ClInclude Include="World\Maps\TileMapRenderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldMessages.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Rendering\RenderMessages.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

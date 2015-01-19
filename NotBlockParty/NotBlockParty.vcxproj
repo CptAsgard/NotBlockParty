@@ -80,12 +80,15 @@
     <ClCompile Include="Engine\State\PlayState.cpp" />
     <ClCompile Include="Engine\State\StateManager.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="World\Maps\BaseTileMap.cpp" />
+    <ClCompile Include="World\Maps\TileMapRenderer.cpp" />
     <ClCompile Include="World\Object\BaseObject.cpp" />
     <ClCompile Include="World\Object\GraphicsObject.cpp" />
     <ClCompile Include="World\Object\PhysicsObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Rendering\GraphicsManager.hpp" />
+    <ClInclude Include="Engine\Rendering\RenderMessages.hpp" />
     <ClInclude Include="Engine\State\StateMessages.hpp" />
     <ClInclude Include="World\Entity\Entity.hpp" />
     <ClInclude Include="World\Entity\EntityManager.hpp" />
@@ -98,7 +101,7 @@
     <ClInclude Include="Engine\State\PlayState.hpp" />
     <ClInclude Include="Engine\State\StateManager.hpp" />
     <ClInclude Include="World\Maps\BaseTileMap.hpp" />
-    <ClInclude Include="World\Maps\TileRenderer.hpp" />
+    <ClInclude Include="World\Maps\TileMapRenderer.hpp" />
     <ClInclude Include="World\Object\BaseObject.hpp" />
     <ClInclude Include="World\Maps\DEBUG_Level1TileMap.hpp" />
     <ClInclude Include="World\GraphicsObject.h" />
@@ -107,6 +110,7 @@
     <ClInclude Include="World\Object\Objects.hpp" />
     <ClInclude Include="World\Object\PhysicsObject.hpp" />
     <ClInclude Include="World\TileFactory.hpp" />
+    <ClInclude Include="World\WorldMessages.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Messaging\MessageBus.inl" />
